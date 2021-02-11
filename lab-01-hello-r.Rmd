@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "Fadia alanazi"
+author: "fadia alanazi"
 date: "11/2/2021"
 output: html_document
 ---
@@ -40,3 +40,4 @@ circle_data <- datasaurus_dozen %>%
   filter(dataset == "circle")
 ggplot(data = circle_data, mapping = aes(x = x, y = y)) + 
   geom_point()
+  
