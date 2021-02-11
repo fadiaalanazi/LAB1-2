@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "fadia alanazi"
+author: "Fadia alanazi"
 date: "11/2/2021"
 output: html_document
 ---
@@ -16,9 +16,14 @@ library(datasauRus)
 
 
 ### Lab Exercise
-
+answer for task 1:
 library(tidyverse) 
 library(datasauRus)
 dino_data %>% summarize(r = cor(x, y))
 View(datasaurus_dozen) datasaurus_dozen %>% count(dataset) %>% print(13)
 
+answer for task 2 :
+dino_data <- datasaurus_dozen %>%
+  filter(dataset == "dino")
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) + 
+  geom_point()
