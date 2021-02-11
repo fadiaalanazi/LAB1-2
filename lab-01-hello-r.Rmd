@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "Fadia alanazi"
+author: "fadia alanazi"
 date: "11/2/2021"
 output: html_document
 ---
@@ -26,4 +26,11 @@ answer for task 2 :
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) + 
+  geom_point()
+  dino_data %>% summarize(r = cor(x, y))
+  
+  answer for ex 3 :
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+ggplot(data = star_data, mapping = aes(x = x, y = y)) + 
   geom_point()
