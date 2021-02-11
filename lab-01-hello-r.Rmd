@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "fadia alanazi"
+author: "Fadia alanazi"
 date: "11/2/2021"
 output: html_document
 ---
@@ -33,4 +33,10 @@ ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
 star_data <- datasaurus_dozen %>%
   filter(dataset == "star")
 ggplot(data = star_data, mapping = aes(x = x, y = y)) + 
+  geom_point()
+  
+  answer for ex 4 :
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) + 
   geom_point()
