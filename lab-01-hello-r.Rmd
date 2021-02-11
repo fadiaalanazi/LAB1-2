@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "fadia alanazi"
+author: "Fadia alanazi"
 date: "11/2/2021"
 output: html_document
 ---
@@ -13,7 +13,18 @@ University ID: 2201001182
 library(tidyverse) 
 library(datasauRus)
 ```
+library(tidyverse) 
+library(datasauRus)
+dino_data %>% summarize(r = cor(x, y))
+View(datasaurus_dozen)
+answer for task 2
+
 
 
 ### Lab Exercise
+```{R}
 
+```
+
+codes:
+task1:
